@@ -1,4 +1,4 @@
-#🔺 Clasificador de Triángulos
+# 🔺 Clasificador de Triángulos
 
 Este proyecto es una página web simple que permite a los usuarios ingresar las longitudes de tres lados y determinar el tipo de triángulo que forman. El sistema valida que los valores ingresados puedan formar un triángulo y luego lo clasifica como:
 
@@ -7,7 +7,7 @@ Este proyecto es una página web simple que permite a los usuarios ingresar las 
 - **Escaleno**: todos los lados son diferentes.
 - **No es un triángulo**: si no se cumple la regla de que la suma de las longitudes de dos lados debe ser mayor que el tercero.
 
-##📁 Estructura del proyecto
+## 📁 Estructura del proyecto
 
 ```plaintext
 .
