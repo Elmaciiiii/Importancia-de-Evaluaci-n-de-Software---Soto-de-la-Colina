@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clasificador de Triángulos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Clasificador de Triángulos</h1>
+    <form id="triangleForm">
+      <label for="lado1">Longitud del Lado 1:</label>
+      <input type="text" id="lado1" inputmode="decimal" placeholder="Ej: 5,3" required />
+
+      <label for="lado2">Longitud del Lado 2:</label>
+      <input type="text" id="lado2" inputmode="decimal" placeholder="Ej: 5,3" required />
+
+      <label for="lado3">Longitud del Lado 3:</label>
+      <input type="text" id="lado3" inputmode="decimal" placeholder="Ej: 5,3" required />
+
+      <div class="buttons">
+        <button type="submit">Clasificar Triángulo</button>
+        <button type="button" id="limpiar">Limpiar Campos</button>
+      </div>
+    </form>
+
+    <div id="resultado" class="resultado" style="display: none;"></div>
+
+    <div class="info-section">
+      <h3 class="info-title">Clasificación de Triángulos</h3>
+      <ul class="triangle-types-list">
+        <li>
+          <span class="type-name">Equilátero:</span>
+          <span class="type-description">Sus tres lados son de igual longitud.</span>
+        </li>
+        <li>
+          <span class="type-name">Isósceles:</span>
+          <span class="type-description">Tiene dos lados de igual longitud y uno diferente.</span>
+        </li>
+        <li>
+          <span class="type-name">Escaleno:</span>
+          <span class="type-description">Todos sus lados tienen longitudes diferentes.</span>
+        </li>
+      </ul>
+      <p class="nota">
+        **Consideración Importante:** Para que tres segmentos formen un triángulo, la suma de las longitudes de cualesquiera dos lados debe ser mayor que la longitud del lado restante.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
